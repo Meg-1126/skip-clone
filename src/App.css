@@ -1,38 +1,95 @@
-.App {
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   text-align: center;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  display: grid;
+  /* width: 100%; */
+  grid-template-columns: 10fr 1fr 1fr;
+  justify-items: left;
+  padding: 1.5rem;
+  position: fixed;
+  top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn__bubble {
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn__menu {
+  display: block;
 }
 
-.App-link {
-  color: #61dafb;
+.card__cuisine {
+  height: 132px;
+  width: 109px;
+  background-size: cover;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 0 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card__italian {
+  background-image: url(../public/images/Italian.jpeg);
+}
+.card__pizza {
+  background-image: url(../public/images/Pizza.png);
+}
+.card__chinese {
+  background-image: url(../public/images/Chinese.png);
+}
+.card__japanese {
+  background-image: url(../public/images/Japanese.jpeg);
+}
+.card__sushi {
+  background-image: url(../public/images/Sushi.png);
+}
+.card__thai {
+  background-image: url(../public/images/Thai.jpeg);
+}
+.card__vietnamese {
+  background-image: url(../public/images/Vietnamese.jpeg);
+}
+.card__burgers {
+  background-image: url(../public/images/Burgers.png);
+}
+.card__greek {
+  background-image: url(../public/images/Greek.jpeg);
+}
+.card__indian {
+  background-image: url(../public/images/Indian.png);
+}
+.card__convenience {
+  background-image: url(../public/images/Convenience.jpeg);
+}
+
+.hero__img {
+  padding-top: 80px;
+  background-image: url(../public/images/mobile-large.webp);
+  height: 640px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: relative; */
+}
+
+.link__home {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 900;
+}
+/* .wrapper__home {
+
+} */
+.wrapper__popularcuisines__cards {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
