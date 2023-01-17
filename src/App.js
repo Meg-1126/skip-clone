@@ -1,5 +1,5 @@
 import './App.css';
-import Header from './components/Header';
+// import Header from './components/Header';
 import Hero from './components/Hero';
 import Slider from './components/Slider';
 import Rewards from './components/Rewards';
@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <Slider/>
       <Rewards/>

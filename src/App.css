@@ -11,20 +11,59 @@ body {
 
 header {
   display: grid;
-  /* width: 100%; */
   grid-template-columns: 10fr 1fr 1fr;
   justify-items: left;
-  padding: 1.5rem;
-  position: fixed;
-  top: 0;
+  align-items: center;
+  padding: 1.2rem;
 }
 
-.btn__bubble {
-  display: block;
+.btn__bubble:hover {
+  cursor: pointer;
+}
+
+.btn__down {
+  margin: 112px auto 0;
+  border-radius: 50%;
+  width: 50px;
+}
+
+.btn__down:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: .7;
+}
+
+.btn__down:hover {
+  cursor: pointer;
+}
+
+.btn__find {
+  background-color: #FB6100;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  padding: 20px 105px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.btn__find:hover {
+  background-color: #F05D00;
+  cursor: pointer;
+}
+
+.btn__locator {
+  padding-left: 14px;
+  border-left: 1px solid #f6f3f1;
 }
 
 .btn__menu {
-  display: block;
+  padding: 0 8px 0 20px;
+}
+
+.btn__menu:hover {
+  cursor: pointer;
 }
 
 .card__cuisine {
@@ -71,13 +110,79 @@ header {
 }
 
 .hero__img {
-  padding-top: 80px;
   background-image: url(../public/images/mobile-large.webp);
-  height: 640px;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   /* position: relative; */
+}
+
+.hero__keyword {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.hero__text {
+  padding-top: 105px;
+}
+
+.icon__user {
+  padding-right: 10px;
+}
+
+.input__address {
+  border: none;
+  font-weight: 700;
+}
+
+.input__address:focus {
+  outline: none;
+}
+
+.input__address::-webkit-input-placeholder {
+  color: #757575;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.input__apt__num {
+  display: block;
+  border: 1px solid #797876;
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  font-weight: 200;
+  color: #0c151c;
+}
+
+.input__apt__num:focus {
+  outline: none;
+}
+
+.input__apt__num::-webkit-input-placeholder {
+  color: #999da0;
+}
+
+.input__instruction {
+  display: block;
+  border: 1px solid #797876;
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  font-weight: 200;
+  color: #0c151c;
+  margin-top: 10px;
+}
+
+.input__instruction:focus {
+  outline: none;
+}
+
+.input__instruction::-webkit-input-placeholder {
+  color: #999da0;
 }
 
 .link__home {
@@ -85,11 +190,45 @@ header {
   font-size: 20px;
   font-weight: 900;
 }
-/* .wrapper__home {
 
-} */
+.wrapper__input {
+  background-color: #ffffff;
+  width: 85%;
+  height: 258px;
+  margin: 0 auto;
+  border-radius: 24px;
+  padding: 16px;
+}
+
+.wrapper__input__address {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.wrapper__input__optional {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 31px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
 .wrapper__popularcuisines__cards {
   overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+}
+
+.wrapper__rewards {
+  background-color: #FEEAD4;
+  height: 500px;
+}
+
+.wrapper__slider {
+  background-color: #757575;
+  height: 70vh;
 }
