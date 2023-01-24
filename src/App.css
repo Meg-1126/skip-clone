@@ -29,7 +29,7 @@ header {
 
 .btn__down:hover {
   background-color: rgba(0, 0, 0, 0.1);
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .btn__down:hover {
@@ -37,7 +37,7 @@ header {
 }
 
 .btn__find {
-  background-color: #FB6100;
+  background-color: #fb6100;
   color: #ffffff;
   font-size: 1.1rem;
   font-weight: 700;
@@ -49,13 +49,32 @@ header {
 }
 
 .btn__find:hover {
-  background-color: #F05D00;
+  background-color: #f05d00;
+  cursor: pointer;
+}
+
+.btn__learnMore {
+  background-color: #fb6100;
+  color: #fff;
+  border: none;
+  border-radius: 32px;
+  padding: 18px 32px;
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+}
+
+.btn__learnMore:hover {
+  background-color: #f05d00;
   cursor: pointer;
 }
 
 .btn__locator {
   padding-left: 14px;
   border-left: 1px solid #f6f3f1;
+}
+
+.btn__locator:hover {
+  cursor: pointer;
 }
 
 .btn__menu {
@@ -115,7 +134,6 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* position: relative; */
 }
 
 .hero__keyword {
@@ -127,6 +145,19 @@ header {
 
 .hero__text {
   padding-top: 105px;
+}
+
+.h2__skip {
+  font-weight: 900;
+  font-size: 2.3rem;
+  color: #ff8001;
+}
+
+.h2__skiprewards {
+  font-weight: 200;
+  font-size: 2.3rem;
+  color: #ff8001;
+  padding-bottom: 18px;
 }
 
 .icon__user {
@@ -191,6 +222,19 @@ header {
   font-weight: 900;
 }
 
+.wrapper__dl {
+  background-color: #0c151c;
+}
+
+.wrapper__img__girl {
+  background-image: url(../public/images/rewards-landingPage-en-1x.png);
+  height: 248px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin-top: -20px; */
+}
+
 .wrapper__input {
   background-color: #ffffff;
   width: 85%;
@@ -224,11 +268,46 @@ header {
 }
 
 .wrapper__rewards {
-  background-color: #FEEAD4;
-  height: 500px;
+  background-color: #feead4;
+  height: 300px;
+  padding-top: 44px;
+  position: relative;
+}
+
+.wrapper__rewards__p {
+  width: 84%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.wrapper__rewards__p > p {
+  color: #425457;
+  font-weight: lighter;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+}
+
+.wrapper__rewards__textArea {
+  position: relative;
+  z-index: 0;
+  background-color: #feead4;
+}
+
+.wrapper__rewards__textArea::after {
+  content: '';
+  position: absolute;
+  left:0;
+  top: 138px;
+  z-index: -1;
+  width: 100%;
+  height: 190px;
+  background: #feead4;
+  transform: skewY(176deg);
+  transform-origin: top right;
 }
 
 .wrapper__slider {
   background-color: #757575;
-  height: 70vh;
+  height: 71vh;
 }
