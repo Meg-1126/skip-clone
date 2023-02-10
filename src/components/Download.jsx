@@ -17,24 +17,28 @@ export default function Download() {
           Download <br />
           Our App
         </h2>
-        <p>
+        <p className="p__dl">
           Our app gives you access to your favourite restaurants. Get your food
           delivered right to you.
         </p>
         <div className="wrapper__dl__btns">
           <div className="btn__dl btn__dl__apple">
-            <div>
-              <AiFillApple />
+            <div className="btn__icon">
+              <AiFillApple size={26}/>
             </div>
-            <p>Download on the</p>
-            <p>App Store</p>
+            <div className="btn__dl__txt">
+              <p className="btn__dl__txt__1">Download on the</p>
+              <p className="btn__dl__txt__2">App Store</p>
+            </div>
           </div>
           <div className="btn__dl btn__dl__google">
-            <div>
-              <RiGooglePlayFill />
+            <div className="btn__icon">
+              <RiGooglePlayFill size={28}/>
             </div>
-            <p>GET IT ON</p>
-            <p>Google Play</p>
+            <div className="btn__dl__txt">
+              <p className="btn__dl__txt__1">GET IT ON</p>
+              <p className="btn__dl__txt__2">Google Play</p>
+            </div>
           </div>
         </div>
       </div>
