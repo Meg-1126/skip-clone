@@ -9,6 +9,10 @@ body {
   font-family: sans-serif;
 }
 
+footer {
+  background-color: #1B252E;
+}
+
 header {
   display: grid;
   grid-template-columns: 10fr 1fr 1fr;
@@ -123,13 +127,82 @@ height: 40px;
   cursor: pointer;
 }
 
+.card {
+  position: relative;
+}
+
+.card__btn {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #425457;
+  border-top: 1px solid #F6F3F1;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.card__btn:hover {
+  cursor: pointer;
+  background-color: #F6F3F1;
+}
+
+.card__img {
+  width: 500px;
+  height: 180px;
+  object-fit: cover;
+  object-position: 0 100%;
+}
+
+.card__img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 350px;
+  z-index: 1;
+  width: 100%;
+  height: 190px;
+  background: #000;
+  transform: skewY(176deg);
+  transform-origin: top right;
+}
+
+.card__text {
+  padding: 0 30px;
+}
+
+.card__text > h3 {
+  font-size: 15px;
+  letter-spacing: 0.03rem;
+}
+
+.card__text > p {
+  font-weight: lighter;
+  font-size: 13px;
+  letter-spacing: 0.03rem;
+  line-height: 1.5;
+  padding: 14px 0 34px;
+}
+
+/* .card__text1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -30px;
+  z-index: -1;
+  width: 100%;
+  height: 190px;
+  background: #000;
+  transform: skewY(176deg);
+  transform-origin: top right;
+} */
+
 .card__cuisine {
   height: 132px;
-  width: 109px;
+  width: 106px;
   background-size: cover;
   display: inline-block;
   border-radius: 10px;
-  margin: 0 5px;
+  margin: 0 8px 0 0;
+  filter: brightness(78%);
 }
 
 .card__italian {
@@ -200,6 +273,10 @@ height: 40px;
   font-size: 2.3rem;
   color: #ff8001;
   padding-bottom: 18px;
+}
+
+.h2__state {
+  padding-bottom: 4px;
 }
 
 .icon__user {
@@ -279,6 +356,29 @@ height: 40px;
   line-height: 1.5;
 }
 
+
+
+.state {
+  font-size: 13px;
+  font-weight: lighter;
+  text-align: left;
+  border-top: 1px solid #F6F3F1;
+  padding: 20.5px 0 20px 18px;
+}
+
+.state:hover {
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.05);
+}
+
+.state__northwest {
+  border-bottom: 1px solid #F6F3F1;
+}
+
+.wrapper__cards {
+  margin: 20px 0 20px;
+}
+
 .wrapper__dl__btns {
   display: flex;
   justify-content: center;
@@ -348,10 +448,34 @@ height: 40px;
   flex-direction: column;
 }
 
+.wrapper__popularcuisines {
+  padding: 70px 16px 32px;
+  background-color: #FCFCFB;
+}
+
+.wrapper__popularcuisines > h2{
+  text-align: left;
+  font-size: 14px;
+  padding-bottom: 18px;
+}
+
+.wrapper__popularcuisines__card {
+  position: relative;
+}
+
 .wrapper__popularcuisines__cards {
   overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+  display: flex;
+}
+
+.wrapper__popularcuisines__cards p {
+  color: #FFFFFF;
+  font-size: 13px;
+  position: absolute;
+  top: 105px;
+  left: 14px;
 }
 
 .wrapper__rewards {
@@ -397,4 +521,9 @@ height: 40px;
 .wrapper__slider {
   background-color: #757575;
   height: 71vh;
+}
+
+.wrapper__states {
+  /* background-color: #425457; */
+  padding-top: 66px;
 }
