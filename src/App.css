@@ -5,12 +5,87 @@
 }
 
 body {
-  text-align: center;
+  /* text-align: center; */
   font-family: sans-serif;
+}
+
+h2 {
+  text-align: center;
 }
 
 footer {
   background-color: #1B252E;
+  padding-top: 56px;
+  
+}
+
+footer li {
+  font-size: 13px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-align: left;
+  list-style-type: none;
+  padding-bottom: 30px;
+}
+
+footer li:hover {
+  cursor: pointer;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  background-color: #162028;
+  color: #FFFFFF;
+  padding: 20px 24px;
+  font-size: 12px;
+}
+
+.footer__copyright__canada {
+  margin: 0 5px;
+  font-weight: bolder;
+}
+
+.footer__copyright__conpany {
+  display: flex;
+  align-items: center;
+}
+
+.footer__copyright__country {
+  display: flex;
+  align-items: center;
+}
+
+.footer__copyright__country:hover {
+  cursor: pointer;
+}
+
+.footer__copyright__skip {
+  margin-left: 5px;
+}
+
+.footer__link1 {
+  display: flex;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #425457;
+}
+
+.footer__link1__left {
+  padding-left: 25px;
+  padding-right: 136px;
+}
+
+.footer__link2 {
+  padding: 54px 0 30px 25px;
+  border-bottom: 1px solid #425457;
+}
+
+.footer__referral__social {
+  padding: 50px 25px 0;
+}
+
+.footer__referral__social a {
+  color: #FFFFFF;
 }
 
 header {
@@ -102,7 +177,10 @@ height: 40px;
   border-radius: 32px;
   padding: 18px 32px;
   font-size: 1.2rem;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
+  display: block;
+  margin: 0 auto 24px;
+  /* text-align: center; */
 }
 
 .btn__learnMore:hover {
@@ -138,6 +216,7 @@ height: 40px;
   border-top: 1px solid #F6F3F1;
   width: 100%;
   padding: 20px 0;
+  text-align: center;
 }
 
 .card__btn:hover {
@@ -167,6 +246,7 @@ height: 40px;
 
 .card__text {
   padding: 0 30px;
+  text-align: center;
 }
 
 .card__text > h3 {
@@ -203,6 +283,10 @@ height: 40px;
   border-radius: 10px;
   margin: 0 8px 0 0;
   filter: brightness(78%);
+}
+
+.card__cuisine:hover {
+  cursor: pointer;
 }
 
 .card__italian {
@@ -252,10 +336,11 @@ height: 40px;
   font-weight: 900;
   font-size: 1.6rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .hero__text {
-  padding-top: 105px;
+  padding-top: 120px;
 }
 
 .h2__dl {
@@ -286,7 +371,9 @@ height: 40px;
 .img__sp {
   width: 240px;
   height: 310px;
-  margin-top: 50px;
+  padding-top: 50px;
+  display: block;
+  margin: 0 auto;
 }
 
 .input__address {
@@ -341,6 +428,11 @@ height: 40px;
   color: #999da0;
 }
 
+.invite {
+  text-align: left;
+  font-size: 15px;
+}
+
 .link__home {
   color: #ffffff;
   font-size: 20px;
@@ -354,9 +446,8 @@ height: 40px;
   margin: 0 auto;
   padding-top: 20px;
   line-height: 1.5;
+  text-align: center;
 }
-
-
 
 .state {
   font-size: 13px;
@@ -373,6 +464,18 @@ height: 40px;
 
 .state__northwest {
   border-bottom: 1px solid #F6F3F1;
+}
+
+.ul__sns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  width: 45%;
+}
+
+.ul__sns li {
+  padding-bottom: 22px;
 }
 
 .wrapper__cards {
@@ -449,7 +552,7 @@ height: 40px;
 }
 
 .wrapper__popularcuisines {
-  padding: 70px 16px 32px;
+  padding: 70px 16px 30px;
   background-color: #FCFCFB;
 }
 
@@ -489,6 +592,7 @@ height: 40px;
   width: 84%;
   margin: 0 auto;
   padding-bottom: 40px;
+  text-align: center;
 }
 
 .wrapper__rewards__p > p {
@@ -524,6 +628,5 @@ height: 40px;
 }
 
 .wrapper__states {
-  /* background-color: #425457; */
   padding-top: 66px;
 }
