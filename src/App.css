@@ -5,7 +5,6 @@
 }
 
 body {
-  /* text-align: center; */
   font-family: sans-serif;
 }
 
@@ -224,28 +223,26 @@ height: 40px;
   background-color: #F6F3F1;
 }
 
+.card__btn__under {
+  width: 100%;
+  height: 20px;
+  background-color: #FCFCFB;
+}
+
 .card__img {
   width: 500px;
   height: 180px;
   object-fit: cover;
   object-position: 0 100%;
+  display: block;
 }
 
-.card__img::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 350px;
-  z-index: 1;
-  width: 100%;
-  height: 190px;
-  background: #000;
-  transform: skewY(176deg);
-  transform-origin: top right;
-}
+/* .card__img2 {
+  height: 176px;
+} */
 
 .card__text {
-  padding: 0 30px;
+  padding: 18px 30px 0;
   text-align: center;
 }
 
@@ -262,18 +259,48 @@ height: 40px;
   padding: 14px 0 34px;
 }
 
-/* .card__text1::before {
+.card__text1::before {
   content: "";
   position: absolute;
   left: 0;
-  top: -30px;
-  z-index: -1;
+  top: 130px;
+  z-index: 1;
   width: 100%;
-  height: 190px;
-  background: #000;
+  height: 50px;
+  background: #FFF;
   transform: skewY(176deg);
   transform-origin: top right;
-} */
+}
+
+.card__text2 {
+  padding-top: 18px;
+}
+
+.card__text2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 176px;
+  z-index: 1;
+  width: 100%;
+  height: 39px;
+  background: #FFF;
+  transform: skewY(-176deg);
+  transform-origin: top right;
+}
+
+.card__text3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 130px;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+  background: #FFF;
+  transform: skewY(176deg);
+  transform-origin: top right;
+}
 
 .card__cuisine {
   height: 132px;
@@ -522,7 +549,6 @@ height: 40px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* margin-top: -20px; */
 }
 
 .wrapper__input {

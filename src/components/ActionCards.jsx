@@ -13,9 +13,11 @@ export default function ActionCards() {
           </p>
         </div>
         <div className="card__btn">Join Now</div>
+        <div className="card__btn__under"></div>
       </div>
-      <div className="card">
-        <img src="./images/restaurants.jpeg" className="card__img" />
+      <div className="card card2">
+        <img src="./images/restaurants.jpeg" className="card__img card__img2" />
+        <div className="card__text2__above"></div>
         <div className="card__text card__text2">
           <h3>Partner With Skip</h3>
           <p>
@@ -24,9 +26,10 @@ export default function ActionCards() {
           </p>
         </div>
         <div className="card__btn">Learn More</div>
+        <div className="card__btn__under"></div>
       </div>
-      <div className="card">
-        <img src="./images/careers.jpeg" className="card__img" />
+      <div className="card card3">
+        <img src="./images/careers.jpeg" className="card__img card__img3" />
         <div className="card__text card__text3">
           <h3>Careers At Skip</h3>
           <p>
@@ -35,6 +38,7 @@ export default function ActionCards() {
           </p>
         </div>
         <div className="card__btn">Apply Today</div>
+        <div className="card__btn__under"></div>
       </div>
     </div>
   );
