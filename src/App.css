@@ -13,15 +13,14 @@ h2 {
 }
 
 footer {
-  background-color: #1B252E;
+  background-color: #1b252e;
   padding-top: 56px;
-  
 }
 
 footer li {
   font-size: 13px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: left;
   list-style-type: none;
   padding-bottom: 30px;
@@ -35,7 +34,7 @@ footer li:hover {
   display: flex;
   justify-content: space-between;
   background-color: #162028;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 20px 24px;
   font-size: 12px;
 }
@@ -84,7 +83,7 @@ footer li:hover {
 }
 
 .footer__referral__social a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 header {
@@ -119,8 +118,8 @@ header {
 }
 
 .btn__dl__google {
-width: 130px;
-height: 40px;
+  width: 130px;
+  height: 40px;
 }
 
 .btn__dl__txt__1 {
@@ -212,7 +211,7 @@ height: 40px;
   font-size: 14px;
   font-weight: bolder;
   color: #425457;
-  border-top: 1px solid #F6F3F1;
+  border-top: 1px solid #f6f3f1;
   width: 100%;
   padding: 20px 0;
   text-align: center;
@@ -220,13 +219,13 @@ height: 40px;
 
 .card__btn:hover {
   cursor: pointer;
-  background-color: #F6F3F1;
+  background-color: #f6f3f1;
 }
 
 .card__btn__under {
   width: 100%;
   height: 20px;
-  background-color: #FCFCFB;
+  background-color: #fcfcfb;
 }
 
 .card__img {
@@ -267,7 +266,7 @@ height: 40px;
   z-index: 1;
   width: 100%;
   height: 50px;
-  background: #FFF;
+  background: #fff;
   transform: skewY(176deg);
   transform-origin: top right;
 }
@@ -284,7 +283,7 @@ height: 40px;
   z-index: 1;
   width: 100%;
   height: 39px;
-  background: #FFF;
+  background: #fff;
   transform: skewY(-176deg);
   transform-origin: top right;
 }
@@ -297,7 +296,7 @@ height: 40px;
   z-index: 1;
   width: 100%;
   height: 50px;
-  background: #FFF;
+  background: #fff;
   transform: skewY(176deg);
   transform-origin: top right;
 }
@@ -480,17 +479,17 @@ height: 40px;
   font-size: 13px;
   font-weight: lighter;
   text-align: left;
-  border-top: 1px solid #F6F3F1;
+  border-top: 1px solid #f6f3f1;
   padding: 20.5px 0 20px 18px;
 }
 
 .state:hover {
   cursor: pointer;
-  background-color: rgba(0,0,0,0.05);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .state__northwest {
-  border-bottom: 1px solid #F6F3F1;
+  border-bottom: 1px solid #f6f3f1;
 }
 
 .ul__sns {
@@ -503,6 +502,15 @@ height: 40px;
 
 .ul__sns li {
   padding-bottom: 22px;
+}
+
+.wrapper__carousel {
+  display: flex;
+  width: 100%; 
+  min-width: 100%; 
+  /* height: 509px; */
+  position: relative;
+  overflow: hidden;
 }
 
 .wrapper__cards {
@@ -551,6 +559,29 @@ height: 40px;
   background-size: cover;
 }
 
+
+.wrapper__indicator {
+  height: 100px;
+  text-align: center;
+}
+
+.indicator {
+  width: 14px;
+  padding: 2px;
+  margin-top: 70px;
+  margin-right: 4px;
+  background-color: #BDBDBD;
+  border: none;
+}
+
+.indicator:hover {
+  cursor: pointer;
+}
+
+.indicator:active {
+  background-color: #F36804;
+}
+
 .wrapper__input {
   background-color: #ffffff;
   width: 85%;
@@ -579,10 +610,10 @@ height: 40px;
 
 .wrapper__popularcuisines {
   padding: 70px 16px 30px;
-  background-color: #FCFCFB;
+  background-color: #fcfcfb;
 }
 
-.wrapper__popularcuisines > h2{
+.wrapper__popularcuisines > h2 {
   text-align: left;
   font-size: 14px;
   padding-bottom: 18px;
@@ -600,7 +631,7 @@ height: 40px;
 }
 
 .wrapper__popularcuisines__cards p {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 13px;
   position: absolute;
   top: 105px;
@@ -650,9 +681,48 @@ height: 40px;
 
 .wrapper__slider {
   background-color: #757575;
-  height: 71vh;
+  height: 68vh;
 }
 
 .wrapper__states {
   padding-top: 66px;
+}
+
+.carousel {
+  padding-top: 10px;
+  width: 100%;
+  height: 400px;
+}
+
+.carousel__img {
+  width: 500px;
+  height: auto;
+}
+
+.carousel__title {
+  font-size: 28px;
+  padding: 0 0 22px 12px;
+}
+
+.carousel__msg {
+  font-size: 14px;
+  font-weight: lighter;
+  color: #425457;
+  line-height: 1.5;
+  padding-left: 12px;
+  padding-right: 10px;
+  padding-bottom: 38px;
+}
+
+.carousel__msg::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100px;
+  /* z-index: -1; */
+  width: 100%;
+  height: 60px;
+  background: #FFF;
+  transform: skewY(176deg);
+  transform-origin: top right;
 }
