@@ -51,7 +51,7 @@ export default function Slider() {
 
   return (
     <>
-      <div className="wrapper__indicator">
+      <div id="wrapper__indicator">
         <button className="indicator ind-left" onClick={go1st} />
         <button className="indicator ind-middle" onClick={go2nd} />
         <button className="indicator ind-right" onClick={go3rd} />

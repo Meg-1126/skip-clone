@@ -8,16 +8,16 @@ export default function Header() {
     <>
       <header className="header">
         <div className="wrapper__home">
-          <a href="#" className="link__home">
-            <BsFillHouseDoorFill />
-            SKIP
-          </a>
+            <p>
+              <BsFillHouseDoorFill className="icon-house" />
+            </p>
+            <p className="skip">SKIP</p>
         </div>
         <div className="btn__bubble">
-          <IoChatbubbleEllipsesSharp color="white" size={33}/>
+          <IoChatbubbleEllipsesSharp color="white" size={33} className="icon-bubble"/>
         </div>
         <div className="btn__menu">
-          <FaUserCircle color="lightgray" size={40}/>
+          <FaUserCircle color="lightgray" size={40} />
         </div>
       </header>
     </>
