@@ -33,13 +33,13 @@ footer li:hover {
 .icon-backToTop {
   font-size: 45px;
   position: absolute;
-  stroke: #0C151C;
-  fill: #FFF;
+  stroke: #0c151c;
+  fill: #fff;
   position: fixed;
   z-index: 99;
   right: 4%;
   bottom: 2%;
-  filter:drop-shadow(1px 1px 2px #595959);
+  filter: drop-shadow(1px 1px 2px #595959);
 }
 
 .icon-backToTop:hover {
@@ -103,15 +103,22 @@ footer li:hover {
 }
 
 header {
-  display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* display: grid;
   grid-template-columns: 10fr 1fr 1fr;
   justify-items: left;
-  align-items: center;
+  align-items: center; */
   padding: 1.2rem;
 }
 
 .btn__bubble:hover {
   cursor: pointer;
+}
+
+.icon-bubble {
+  font-size: 33px;
 }
 
 .btn__dl {
@@ -149,17 +156,19 @@ header {
 }
 
 .btn__down {
-  margin: 112px auto 0;
+  margin: 0 auto;
+  padding-top: 50px;
   border-radius: 50%;
   width: 50px;
+  height: 50PX;
+  text-align: center;
 }
 
 .btn__down:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  opacity: 0.7;
+  /* background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0.7; */
   cursor: pointer;
 }
-
 
 .btn__find {
   background-color: #fb6100;
@@ -249,10 +258,6 @@ header {
   object-position: 0 100%;
   display: block;
 }
-
-/* .card__img2 {
-  height: 176px;
-} */
 
 .card__text {
   padding: 18px 30px 0;
@@ -748,10 +753,42 @@ header {
   position: absolute;
   left: 0;
   top: 100px;
-  /* z-index: -1; */
   width: 100%;
   height: 60px;
   background: #fff;
   transform: skewY(176deg);
   transform-origin: top right;
+}
+
+.userLocation {
+  font-size: 20px;
+}
+
+.currentLocation {
+  font-size: 30px;
+}
+
+.header-help {
+  display: none;
+}
+
+.header-icon-country {
+  display: none;
+}
+
+.header-login {
+  display: none;
+}
+
+.header-signup {
+  display: none;
+}
+
+.right-menu {
+  display: flex;
+}
+
+.down-arrow {
+  font-size: 44px;
+  color: #D5CCC1;
 }

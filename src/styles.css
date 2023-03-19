@@ -1,6 +1,5 @@
 /* 960 */
 /* Header */
-/* Bigger logo */
 /* Need help, canada icon, vertical line, login txt, signup btn */
 /* ============= */
 /* Hero */
@@ -8,12 +7,36 @@
 
 @media only screen and (min-width: 960px) {
   body {
-    background-color: lightblue;
+    box-sizing:border-box;
   }
 
+  /* HEADER */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 20px 40px;
+    max-width: 100%;
+  }
+
+  .wrapper__home {
+    width: 60%;
+    justify-content: left;
+    /* margin-right: 180px; */
+  }
+
+  .right-menu {
+    width: 40%;
+    justify-content: right;
+    /* display: flex; */
+  }
+
+  .icon-bubble {
+    font-size: 26px;
+  }
   .icon-house {
     font-size: 40px;
-    color: #FFF;
+    color: #fff;
   }
 
   .skip {
@@ -21,6 +44,115 @@
   }
 
   .btn__bubble {
-    border-right: 1px solid #FFF;
+    /* border-right: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    height: 50px;
+    max-width: 50%;
   }
+
+  .header-bubble {
+    margin-right: 10px;
+  }
+
+  .header-help {
+    color: #fff;
+    margin-right: 2px;
+    display: block;
+  }
+
+  .header-icon-country {
+    /* margin-right: 20px; */
+    display: block;
+    border-right: 1px solid #fff;
+    height: 50px;
+  }
+
+  .icon-country {
+    /* margin-right: 30px; */
+    padding: 14px 24px 0 10px;
+  }
+
+  .btn__menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 50%;
+  }
+
+  .header-user {
+    margin-right: 10px;
+  }
+
+  .header-login {
+    color: #fff;
+    margin-right: 15px;
+    display: block;
+  }
+
+  .header-signup {
+    display: block;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background-color: #fdfdfd;
+    font-weight: 600;
+    display: block;
+  }
+
+  .header-signup:hover {
+    cursor: pointer;
+    background-color: #eeebeb;
+    transition: .5s;
+  }
+
+  /* HERO INPUT */
+  .hero__keyword {
+    font-size: 2rem;
+  }
+  .wrapper__input {
+    max-width: 830px;
+    height: 220px;
+  }
+  .userLocation {
+    font-size: 30px;
+  }
+  .input__address {
+    font-size: 18px;
+  }
+  .input__address::placeholder {
+    font-size: 18px;
+  }
+
+  .currentLocation {
+    font-size: 40px;
+  }
+
+  .wrapper__input__optional {
+    flex-direction: row;
+  }
+
+  .input__apt__num {
+    /* padding: 20px 16px; */
+    width: 380px;
+    margin-right: 16px;
+  }
+
+  .input__instruction {
+    margin-top: 0;
+    /* padding: 18px 16px; */
+    width: 380px;
+  }
+  /* HERO */
+  .down-arrow {
+  font-size: 76px;
+}
+
+#hero__img {
+  background-image: url(../public/images/desktop-large.webp);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 }

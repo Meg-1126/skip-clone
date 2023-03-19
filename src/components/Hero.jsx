@@ -18,7 +18,7 @@ export default function Hero() {
           <p className="hero__keyword">Did somebody say Skip?</p>
           <Input />
           <div className="btn__down" onClick={goDown}>
-            <RiArrowDownSLine size={44} color="#979692" />
+            <RiArrowDownSLine className="down-arrow"/>
           </div>
         </div>
       </div>

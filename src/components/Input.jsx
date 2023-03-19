@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BiCurrentLocation } from "react-icons/bi";
 import { RiUserLocationFill } from "react-icons/ri";
 
 export default function Input() {
+  // console.log(width);
+  let width;
+  useEffect(()=> {
+    document.addEventListener("resize", (event) => {
+      width = window.outerWidth;
+      console.log("resize", width);
+    });
+  },[])
   return (
     <div className="wrapper__input">
       <div className="wrapper__input__address">
         <div className="icon__user">
-        <RiUserLocationFill size={20}/>
+          <RiUserLocationFill className="userLocation" />
         </div>
         <input
           className="input__address"
@@ -15,7 +23,7 @@ export default function Input() {
           placeholder="Enter Your Address"
         />
         <div className="btn__locator">
-          <BiCurrentLocation size={30}/>
+          <BiCurrentLocation className="currentLocation" />
         </div>
       </div>
       <div className="wrapper__input__optional">
@@ -28,7 +36,12 @@ export default function Input() {
           placeholder="Delivery Instruction (optional)"
         />
       </div>
-      <button className="btn__find">Find Restaurants Nearby</button>
+      {width >= 960 ? (
+        <button className="btn__find">Find Restaurants In Your Area</button>
+      ) : (
+        <button className="btn__find">Find Restaurants Nearby</button>
+      )}
+      {/* <button className="btn__find">Find Restaurants Nearby</button> */}
     </div>
   );
 }
