@@ -9,18 +9,21 @@ export default function Slider() {
       message:
         "We have thousands of restaurants, including local favorites that don't normally deliver. Discover new cuisines all around you.",
       image: "./images/more-choice_mobile.jpeg",
+      imageDesktop: "./images/more-choice_desktop.jpeg",
     },
     {
       title: "Smarter Delivery",
       message:
         "Watch your order from the moment you place it until the food is at your door. Transparency. Welcome to the future.",
       image: "./images/smarter-delivery_mobile.jpeg",
+      imageDesktop: "./images/smarter-delivery_desktop.jpeg",
     },
     {
       title: "Gain Time",
       message:
         " Life can be complicated but ordering food doesn't have to be. Let us take care of the details while you focus on what really matters.",
       image: "./images/gain-time_mobile.jpeg",
+      imageDesktop: "./images/gain-time_desktop.jpeg",
     },
   ];
 
@@ -31,10 +34,12 @@ export default function Slider() {
     return setCurrentIndex(currentIndex + 1);
   };
 
-  useEffect(()=> {
-    const interval = setInterval(()=>{infiniteScroll()}, 6000)
-    return () => clearInterval(interval)
-  })
+  useEffect(() => {
+    const interval = setInterval(() => {
+      infiniteScroll();
+    }, 6000);
+    return () => clearInterval(interval);
+  });
 
   const go1st = (e) => {
     console.log("click1");
@@ -62,11 +67,30 @@ export default function Slider() {
             <div
               key={index}
               className="carousel"
-              style={{ transform: `translate(-${currentIndex * 100}%)`, transition: `0.8s` }}
+              style={{
+                transform: `translate(-${currentIndex * 100}%)`,
+                transition: `0.8s`,
+              }}
             >
-              <h3 className="carousel__title">{item.title}</h3>
-              <p className="carousel__msg">{item.message}</p>
-              <img src={item.image} className="carousel__img" />
+              <div className="carousel__inner">
+                <div className="carousel__text">
+                  <div id="wrapper__indicator__desktop">
+                    <button className="indicator ind-left" onClick={go1st} />
+                    <button className="indicator ind-middle" onClick={go2nd} />
+                    <button className="indicator ind-right" onClick={go3rd} />
+                  </div>
+                  <h3 className="carousel__title">{item.title}</h3>
+                  <p className="carousel__msg">{item.message}</p>
+                </div>
+                {/* <img src={item.image} className="carousel__img" /> */}
+                <img
+                  srcset={`${item.image} 750w, ${item.imageDesktop} 1250w`}
+                  sizes="(min-width: 960px) 1250px, 750px"
+                  src={item.image}
+                  className="carousel__img"
+                  alt={item.title}
+                />
+              </div>
             </div>
           );
         })}

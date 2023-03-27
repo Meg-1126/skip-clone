@@ -1,5 +1,4 @@
 import React from "react";
-// import { FaBeer } from "react-icons/fa";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
@@ -29,6 +28,33 @@ export default function Footer() {
           <li>Partner Success Guide</li>
           <li>Food Wiki</li>
         </ul>
+        <div className="footer__referral__social__desktop">
+          <a href="#" className="invite">
+            Invite Friends, Get $5 <AiOutlineArrowRight />
+          </a>
+          <ul className="ul__sns">
+            <li>
+              <a href="#" className="twitter">
+                <BsTwitter />
+              </a>
+            </li>
+            <li>
+              <a href="#" className="facebook">
+                <AiFillFacebook />
+              </a>
+            </li>
+            <li>
+              <a href="#" className="instagram">
+                <BsInstagram />
+              </a>
+            </li>
+            <li>
+              <a href="#" className="youtube">
+                <BsYoutube />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <ul className="footer__link2">
         <li>Terms Of Service</li>
@@ -45,39 +71,39 @@ export default function Footer() {
         </a>
         <ul className="ul__sns">
           <li>
-            <a href="#" className="twitter">
-              <BsTwitter size={28} />
+            <a href="#">
+              <BsTwitter className="twitter" />
             </a>
           </li>
           <li>
-            <a href="#" className="facebook">
-              <AiFillFacebook size={35} />
+            <a href="#">
+              <AiFillFacebook className="facebook" />
             </a>
           </li>
           <li>
-            <a href="#" className="instagram">
-              <BsInstagram size={28} />
+            <a href="#">
+              <BsInstagram className="instagram" />
             </a>
           </li>
           <li>
-            <a href="#" className="youtube">
-              <BsYoutube size={30} />
+            <a href="#">
+              <BsYoutube className="youtube" />
             </a>
           </li>
         </ul>
       </div>
       <div className="footer__copyright">
-        <div className="footer__copyright__country">
-          <SiAircanada size={18} />
-          <span className="footer__copyright__canada">Canada</span>
-          <RxTriangleDown />
+        <div className="footer__copyright__inner">
+          <div className="footer__copyright__country">
+            <SiAircanada size={18} />
+            <span className="footer__copyright__canada">Canada</span>
+            <RxTriangleDown />
+          </div>
+          <p className="footer__copyright__conpany">
+            <AiOutlineCopyrightCircle size={10} />
+            <span className="footer__copyright__skip">2023 SkipTheDishes</span>
+          </p>
         </div>
-        <p className="footer__copyright__conpany">
-          <AiOutlineCopyrightCircle size={10}/>
-          <span className="footer__copyright__skip">
-          2023 SkipTheDishes
-          </span>
-        </p>
       </div>
     </footer>
   );
