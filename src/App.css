@@ -567,13 +567,17 @@ header {
   padding-bottom: 22px;
 }
 
-.wrapper__carousel {
+#wrapper__carousel {
   display: flex;
   width: 100%;
   min-width: 100%;
   height: 509px;
   position: relative;
   overflow: hidden;
+}
+
+#wrapper__indicator__desktop {
+  display: none;
 }
 
 .carousel__inner {

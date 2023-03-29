@@ -163,42 +163,60 @@
     display: none;
   }
 
+  #wrapper__indicator__desktop {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  #wrapper__carousel {
+    height: 544px;
+  }
+
+  .indicator {
+    width: 20px;
+  }
+
   .carousel {
     padding-top: 0;
-    height: 509px;
+    height: 544px;
   }
+
   .carousel__inner {
-   display: flex;
-   height: 509px;
+    display: flex;
+    height: 544px;
   }
 
   .carousel__text {
     width: 60%;
-    padding: 50px 50px 0 200px;
+    padding: 100px 50px 0 200px;
+  }
+
+  .carousel__title {
+    padding: 0;
+    margin-bottom: 24px;
   }
 
   .carousel__msg {
-    width: 44%;
+    width: 50%;
+    padding: 0;
   }
 
   .carousel__msg::after {
-  content: "";
-  position: absolute;
-  left: 500px;
-  top: 1px;
-  width: 310px;
-  height: 100%;
-  background: #FFF;
-  transform: skewX(160deg);
-  transform-origin: top right;
-}
+    content: "";
+    position: absolute;
+    left: 600px;
+    top: 1px;
+    width: 280px;
+    height: 100%;
+    background: #fff;
+    transform: skewX(160deg);
+    transform-origin: top right;
+  }
 
   .carousel__img {
     width: 40%;
-    height: 509px;
+    height: 100%;
   }
-
-
 
   /* FOOTER */
   footer {
@@ -270,7 +288,6 @@
   .footer__copyright__inner {
     max-width: 936px;
     margin: 0 auto;
-   
   }
 
   .invite {
@@ -300,18 +317,21 @@
   }
 }
 
+@media only screen and (min-width: 1280px) {
+  .carousel__msg {
+    width: 80%;
+    padding: 0;
+  }
 
-@media only screen and (min-width: 1130px) {
-.carousel__msg::after {
-  content: "";
-  position: absolute;
-  left: 680px;
-  top: 1px;
-  width: 310px;
-  height: 100%;
-  background: #FFF;
-  transform: skewX(160deg);
-  transform-origin: top right;
-}
-
+  .carousel__msg::after {
+    content: "";
+    position: absolute;
+    left: 780px;
+    top: 1px;
+    width: 280px;
+    height: 100%;
+    background: #fff;
+    transform: skewX(160deg);
+    transform-origin: top right;
+  }
 }

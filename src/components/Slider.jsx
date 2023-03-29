@@ -57,11 +57,35 @@ export default function Slider() {
   return (
     <>
       <div id="wrapper__indicator">
-        <button className="indicator ind-left" onClick={go1st} />
-        <button className="indicator ind-middle" onClick={go2nd} />
-        <button className="indicator ind-right" onClick={go3rd} />
+        {currentIndex === 0 ? (
+          <button
+            className="indicator ind-left"
+            onClick={go1st}
+            style={{ backgroundColor: "#f36804" }}
+          />
+        ) : (
+          <button className="indicator ind-left" onClick={go1st} />
+        )}
+        {currentIndex === 1 ? (
+          <button
+            className="indicator ind-middle"
+            onClick={go2nd}
+            style={{ backgroundColor: "#f36804" }}
+          />
+        ) : (
+          <button className="indicator ind-middle" onClick={go2nd} />
+        )}
+        {currentIndex === 2 ? (
+          <button
+            className="indicator ind-right"
+            onClick={go3rd}
+            style={{ backgroundColor: "#f36804" }}
+          />
+        ) : (
+          <button className="indicator ind-right" onClick={go3rd} />
+        )}
       </div>
-      <div className="wrapper__carousel">
+      <div id="wrapper__carousel">
         {sliderContents.map((item, index) => {
           return (
             <div
@@ -75,14 +99,40 @@ export default function Slider() {
               <div className="carousel__inner">
                 <div className="carousel__text">
                   <div id="wrapper__indicator__desktop">
-                    <button className="indicator ind-left" onClick={go1st} />
-                    <button className="indicator ind-middle" onClick={go2nd} />
-                    <button className="indicator ind-right" onClick={go3rd} />
+                    {currentIndex === 0 ? (
+                      <button
+                        className="indicator ind-left"
+                        onClick={go1st}
+                        style={{ backgroundColor: "#f36804" }}
+                      />
+                    ) : (
+                      <button className="indicator ind-left" onClick={go1st} />
+                    )}
+                    {currentIndex === 1 ? (
+                      <button
+                        className="indicator ind-middle"
+                        onClick={go2nd}
+                        style={{ backgroundColor: "#f36804" }}
+                      />
+                    ) : (
+                      <button
+                        className="indicator ind-middle"
+                        onClick={go2nd}
+                      />
+                    )}
+                    {currentIndex === 2 ? (
+                      <button
+                        className="indicator ind-right"
+                        onClick={go3rd}
+                        style={{ backgroundColor: "#f36804" }}
+                      />
+                    ) : (
+                      <button className="indicator ind-right" onClick={go3rd} />
+                    )}
                   </div>
                   <h3 className="carousel__title">{item.title}</h3>
                   <p className="carousel__msg">{item.message}</p>
                 </div>
-                {/* <img src={item.image} className="carousel__img" /> */}
                 <img
                   srcset={`${item.image} 750w, ${item.imageDesktop} 1250w`}
                   sizes="(min-width: 960px) 1250px, 750px"

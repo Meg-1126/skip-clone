@@ -5,7 +5,7 @@ import { RiArrowDownSLine } from "react-icons/ri";
 
 export default function Hero() {
   const goDown = () => {
-    const element = document.getElementById("wrapper__indicator");
+    const element = document.getElementById("wrapper__carousel");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
