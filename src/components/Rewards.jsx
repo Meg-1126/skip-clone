@@ -4,6 +4,7 @@ export default function Rewards() {
   return (
     <>
       <div className="wrapper__rewards">
+        <div className="wrapper__img__girl__desktop"></div>
         <div className="wrapper__rewards__textArea">
           <h2 className="h2__skiprewards">
             <span className="h2__skip">SKIP</span>REWARDS
