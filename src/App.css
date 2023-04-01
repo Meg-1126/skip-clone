@@ -405,6 +405,7 @@ header {
 
 .h2__dl {
   line-height: 1.4;
+  font-size: 26px;
 }
 
 .h2__skip {
@@ -431,9 +432,13 @@ header {
 .img__sp {
   width: 240px;
   height: 310px;
-  padding-top: 50px;
+  padding-top: 40px;
   display: block;
   margin: 0 auto;
+}
+
+.img__desktop {
+  display: none;
 }
 
 .input__address {
@@ -575,38 +580,21 @@ header {
   margin: 20px 0 20px;
 }
 
+.wrapper__dl {
+  background-color: #0C151C;
+}
+
 .wrapper__dl__btns {
   display: flex;
   justify-content: center;
   padding-top: 40px;
-  padding-bottom: 45px;
-}
-
-.wrapper__dl__img {
-  background-color: #0c151c;
-  height: 280px;
-  position: relative;
-  z-index: 0;
-  margin-top: 260px;
-}
-
-.wrapper__dl__img::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 138px;
-  z-index: -1;
-  width: 100%;
-  height: 160px;
-  background: #0c151c;
-  transform: skewY(176deg);
-  transform-origin: top right;
 }
 
 .wrapper__dl__text {
-  background-color: #111b21;
   color: #ffffff;
-  padding-top: 95px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  height: 235px;
 }
 
 .wrapper__img__girl {
@@ -700,10 +688,7 @@ header {
 }
 
 .wrapper__rewards {
-  background-color: #feead4;
-  height: 300px;
-  padding-top: 44px;
-  position: relative;
+  position: static;
 }
 
 .wrapper__rewards__p {
@@ -725,16 +710,17 @@ header {
   position: relative;
   z-index: 0;
   background-color: #feead4;
+  padding-top: 44px;
 }
 
 .wrapper__rewards__textArea::after {
   content: "";
   position: absolute;
   left: 0;
-  top: 138px;
+  top: 145px;
   z-index: -1;
   width: 100%;
-  height: 190px;
+  height: 220px;
   background: #feead4;
   transform: skewY(176deg);
   transform-origin: top right;

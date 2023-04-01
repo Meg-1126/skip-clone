@@ -1,3 +1,6 @@
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+}
+
 @media only screen and (min-width: 960px) {
   body {
     box-sizing: border-box;
@@ -242,24 +245,25 @@
     left: 500px;
     width: 330px;
     height: 540px;
-    background: #FEEAD4;
+    background: #feead4;
     transform: skewX(160deg);
     transform-origin: top right;
   }
 
   .wrapper__rewards__textArea::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 0;
-  height: 0;
-}
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+  }
 
   .wrapper__img__girl__desktop {
     display: block;
     background-image: url(../public/images/rewards-landingPage-en-1x.png);
     width: 50%;
+    height: 540px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -268,12 +272,62 @@
   .btn__learnMore {
     display: inline;
     margin-left: 60px;
-}
+  }
+
+  /* DAWNLOAD */
+  .wrapper__dl__inner {
+    max-width: 920px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .wrapper__dl__imgwrap {
+    margin-right: 120px;
+  }
+
+  .img__sp {
+    display: none;
+  }
+  .wrapper__dl__img {
+    margin-top: 0;
+  }
+
+  .wrapper__dl {
+    height: 564px;
+  }
+
+  .img__desktop {
+    width: 470px;
+    height: 464px;
+    display: block;
+    padding-top: 100px;
+  }
+
+  .wrapper__dl__text {
+    padding-top: 172px;
+  }
+
+  .h2__dl {
+    text-align: left;
+    padding-bottom: 14px;
+  }
+
+  .p__dl {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .wrapper__dl__btns {
+    justify-content: left;
+    padding-top: 22px;
+  }
+
+  .btn__dl__apple {
+    margin-right: 20px;
+  }
 
   /* FOOTER */
-  footer {
-    /* padding: 106px 80px 10px 80px; */
-  }
   /* hide social section for mobile and make desktop section visible*/
   .footer__referral__social {
     display: none;
@@ -365,6 +419,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
+  /* CAROUSEL */
   .carousel__msg {
     width: 80%;
     padding: 0;
@@ -381,15 +436,20 @@
     transform: skewX(160deg);
     transform-origin: top right;
   }
-
+  /* REWARDS */
   .wrapper__img__girl__desktop::after {
     content: "";
     position: absolute;
     left: 630px;
     width: 300px;
     height: 540px;
-    background: #FEEAD4;
+    background: #feead4;
     transform: skewX(160deg);
     transform-origin: top right;
+  }
+
+  /* DOWNLOAD */
+  .h2__dl {
+    font-size: 30px;
   }
 }
