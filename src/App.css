@@ -577,7 +577,9 @@ header {
 }
 
 .wrapper__cards {
-  margin: 20px 0 20px;
+  /* margin-bottom: 20px; */
+  padding: 20px 0 20px;
+  background-color: #FCFCFB;
 }
 
 .wrapper__dl {
