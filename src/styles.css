@@ -399,6 +399,27 @@
     transform: skewY(176deg);
   }
 
+  /* MAP */
+  .h2__state {
+    font-size: 26px;
+    padding-bottom: 26px;
+  }
+
+  .state__map {
+    display: block;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 64px;
+  }
+
+  .state__map:hover {
+    cursor: pointer;
+  }
+
+  .state {
+    display: none;
+  }
+
   /* FOOTER */
   /* hide social section for mobile and make desktop section visible*/
   .footer__referral__social {

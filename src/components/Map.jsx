@@ -4,6 +4,7 @@ export default function Map() {
   return (
     <div className="wrapper__states">
       <h2 className="h2__state">Now Serving</h2>
+      <img src="./images/canadaMap.png" alt="map" className="state__map"/>
       <div className="state">Alberta</div>
       <div className="state">British Columbia</div>
       <div className="state">Manitoba</div>

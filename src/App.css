@@ -579,11 +579,11 @@ header {
 .wrapper__cards {
   /* margin-bottom: 20px; */
   padding: 20px 0 20px;
-  background-color: #FCFCFB;
+  background-color: #fcfcfb;
 }
 
 .wrapper__dl {
-  background-color: #0C151C;
+  background-color: #0c151c;
 }
 
 .wrapper__dl__btns {
@@ -806,4 +806,8 @@ header {
 .down-arrow {
   font-size: 44px;
   color: #d5ccc1;
+}
+
+.state__map {
+  display: none;
 }
