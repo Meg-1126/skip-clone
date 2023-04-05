@@ -264,6 +264,7 @@ header {
   width: 100%;
   height: 20px;
   background-color: #fcfcfb;
+  display: block;
 }
 
 .card__img {
@@ -577,7 +578,6 @@ header {
 }
 
 .wrapper__cards {
-  /* margin-bottom: 20px; */
   padding: 20px 0 20px;
   background-color: #fcfcfb;
 }
@@ -664,7 +664,11 @@ header {
   background-color: #fcfcfb;
 }
 
-.wrapper__popularcuisines > h2 {
+.arrow-right {
+  display: none;
+}
+
+.h2__popularcuisines {
   text-align: left;
   font-size: 14px;
   padding-bottom: 18px;
@@ -674,14 +678,14 @@ header {
   position: relative;
 }
 
-.wrapper__popularcuisines__cards {
+#wrapper__popularcuisines__cards {
   overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
   display: flex;
 }
 
-.wrapper__popularcuisines__cards p {
+#wrapper__popularcuisines__cards p {
   color: #ffffff;
   font-size: 13px;
   position: absolute;

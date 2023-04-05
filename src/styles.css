@@ -41,6 +41,14 @@
     height: 41px;
     transform: skewY(174deg);
   }
+
+  .card__btn:hover {
+    border-radius: 10px;
+  }
+
+  .card__btn__under {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 960px) {
@@ -369,12 +377,11 @@
     margin-right: 20px;
   }
 
-   /* ACTION CARDS */
+  /* ACTION CARDS */
   .wrapper__cards {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    /* align-items: center; */
     max-width: 960px;
     margin: 0 auto;
   }
@@ -393,10 +400,23 @@
     border-radius: 10px;
   }
 
+  .card__text {
+    text-align: left;
+    padding-bottom: 35px;
+  }
+
+  .card__btn:hover {
+    border-radius: 10px;
+  }
+
   .card__text2::before {
     top: 130px;
     height: 50px;
     transform: skewY(176deg);
+  }
+
+  .card__btn__under {
+    display: none;
   }
 
   /* MAP */
@@ -420,7 +440,79 @@
     display: none;
   }
 
+  /* POPULAR CUISINES */
+  .wrapper__popularcuisines {
+    padding-bottom: 68px;
+  }
+  .h2__popularcuisines {
+    font-size: 26px;
+    padding-top: 34px;
+  }
+
+  .wrapper__popularcuisines__inner {
+    display: block;
+    max-width: 920px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .wrapper__popularcuisines__cards {
+    overflow: hidden;
+    white-space: normal;
+    -webkit-overflow-scrolling: auto;
+    display: flex;
+  }
+
+  .arrow-right {
+    font-size: 46px;
+    position: absolute;
+    top: 130px;
+    right: -18px;
+    z-index: 100;
+    color: #fff;
+  }
+
+  .arrow-right:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+  }
+
+  .arrow-left {
+    font-size: 46px;
+    position: absolute;
+    top: 130px;
+    left: -20px;
+    z-index: 101;
+    color: #fff;
+  }
+
+  .arrow-left:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+  }
+
+  #wrapper__popularcuisines__cards p {
+    color: #ffffff;
+    font-size: 16px;
+    position: absolute;
+    top: 120px;
+    left: 14px;
+  }
+
+  .card__cuisine {
+    height: 149px;
+    width: 223px;
+    background-size: cover;
+    display: inline-block;
+    border-radius: 4px;
+    margin: 0 8px 0 0;
+    filter: brightness(78%);
+  }
+
   /* FOOTER */
+  footer {
+    padding-top: 100px;
+  }
   /* hide social section for mobile and make desktop section visible*/
   .footer__referral__social {
     display: none;
@@ -486,7 +578,7 @@
 
   .invite {
     font-size: 16px;
-    margin-bottom: 170px;
+    margin-bottom: 200px;
     display: block;
   }
 
