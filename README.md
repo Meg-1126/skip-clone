@@ -2,12 +2,12 @@
 
 Aim for this project is cloning existing website to test my knowledge and improve my skills for HTML, CSS, and JavaScript(including React.js) .
 
-I chose [https://www.skipthedishes.com/]("Skip the Dishes") for the website to clone because it uses a lot of cool designs like carousel, diagonal lines to divide text and images, and a beautiful color combinations.
+I chose [Skip the Dishes](https://www.skipthedishes.com/) for the website to clone because it uses a lot of cool designs like carousel, diagonal lines to divide text and images, and a beautiful color combinations.
 
 Of course it is a responsive website, having both mobile and desktop version.
 
 ## Website
-You can visit my demo website from [https://skip-clone.vercel.app/](here).
+You can visit my demo website from [HERE](https://skip-clone.vercel.app/).
 
 ## Things I learned
 
